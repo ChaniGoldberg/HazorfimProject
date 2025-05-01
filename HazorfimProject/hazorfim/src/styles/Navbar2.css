@@ -1,0 +1,88 @@
+*{
+  direction: rtl;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 300px; 
+  margin-right: 5em;
+}
+
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  color: #36012a;
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative; /* Set position to enable absolute positioning for the underline */
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  color: #36012a; /* Link color */
+  text-decoration: none; /* Remove default underline */
+  padding: 0.5rem 0; /* Add some vertical padding */
+  position: relative; /* Position relative to contain the pseudo-element */
+}
+
+.nav-links a:before {
+  content: ''; /* Create a pseudo-element for the underline */
+  position: absolute;
+  background-color: #36012a; /* Color of the underline */
+  height: 2px; /* Thickness of the underline */
+  width: 0; /* Start with width 0 */
+  bottom: 0; /* Position it at the bottom of the link */
+  left: 50%; /* Start from the center */
+  transition: width 0.4s ease, left 0.4s ease; /* Animate on hover */
+}
+
+.nav-links a:hover:before {
+  width: 100%; /* Expand to full width on hover */
+  left: 0; /* Shift to start from the left */
+}

@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Navbar2 from './components/nav2/Navbar2.js';
+import LoginPopup from './components/loginPopup/LoginPopup.js';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AppRoutes from './components/routers/routers.js';
+import DisplayCategory from './components/categoryPage/components/CategoryDisplay.js';
+import CategoryDisplay from './components/categoryPage/components/CategoryDisplay.js';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+  <AppRoutes></AppRoutes>
+<Navbar2></Navbar2>
+<CategoryDisplay categoryName="קידוש ויין" />
+            <CategoryDisplay categoryName="שולחן שבת" />
+{/* <LoginPopup></LoginPopup> */}
+</>
   );
 }
 

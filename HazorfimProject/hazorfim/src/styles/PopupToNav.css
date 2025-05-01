@@ -1,0 +1,24 @@
+
+
+
+
+.popup-content {
+    top: 60px;
+    position: relative; /* משנה את המיקום של הפופאפ עצמו */
+    margin-top: 20px; /* רווח מעל הפופאפ */
+    background: white; /* צבע הרקע של הפופאפ */
+    border-radius: 8px;
+    width: 60%; /* רוחב הפופאפ */
+    max-height: 400px; /* גובה מקסימלי של הפופאפ */
+   
+}
+
+.list-container {
+    display: flex;
+    justify-content: space-between; /* Aligns columns */
+}
+
+.column {
+    flex: 1; /* Allows columns to share available space */
+    margin: 10px; /* Adds space between columns */
+}
