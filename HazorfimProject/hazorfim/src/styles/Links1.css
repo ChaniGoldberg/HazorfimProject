@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: rgb(6, 6, 6);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(252, 250, 252);
+  padding: 10px 20px;
+}
+
+.navbar-center {
+  flex-grow: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 5vw
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(52, 4, 52);
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a p {
+  margin-right: 5; /* Space between icon and text */
+}
+
+.nav-links a:hover {
+  color: purple; /* Change color on hover */
+}
+
+.navbar-left .logo {
+  color: rgb(6, 6, 6);
+  font-weight: bold;
+}
+#conect{
+  margin-right: 40vw;
+}
