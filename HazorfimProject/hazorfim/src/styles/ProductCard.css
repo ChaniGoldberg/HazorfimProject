@@ -1,0 +1,75 @@
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .product-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    position: relative;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .product-info {
+    text-align: center;
+  }
+  
+  .product-name {
+    margin: 10px 0;
+    font-size: 14px; /* גודל קטן יותר לשם המוצר */
+  }
+  
+  .product-price {
+    color: #4B0082; /* צבע סגול כהה */
+    font-weight: bold;
+    font-size: 18px; /* גודל גדול יותר למחיר */
+  }
+  
+  .favorite-button {
+    background: white; /* מילוי לבן */
+    border: 2px solid #4B0082; /* מסגרת סגולה */
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5px;
+  }
+  
+  .favorite-button:hover {
+    background: #4B0082; /* שינוי צבע ברוורס */
+    color: white; /* צבע טקסט לבן על רקע סגול */
+  }
+  
+  .view-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5px;
+  }
+  
+  .view-button:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+  }
+  
+  /* הוספת כפתור הצגת התמונה הגדולה על התמונה */
+  .product-card .view-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8); /* רקע שקוף */
+    border-radius: 50%;
+    padding: 5px;
+  }
+  

@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "סט גביע צלחת מרטל",
+      "category": "סט קידוש",
+      "price": 1340,
+      "stock": 10,
+      "productImage": "martel1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "סט פלגרין קל",
+      "category": "סט קידוש",
+      "price": 1266,
+      "stock": 5,
+      "productImage": "set-palgrin-kal1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "סט חתן בולרו חלק",
+      "category": "סט קידוש",
+      "price": 4521,
+      "stock": 5,
+      "productImage": "chatan-Bolero-chalak.jpg"
+    },
+    {
+      "id": 4,
+      "name": "סט קידוש בוגאטי",
+      "category": "סט קידוש",
+      "price": 2200,
+      "stock": 5,
+      "productImage": "bokati.jpg"
+    },
+    {
+      "id": 5,
+      "name": "סט גביע וצלחת ארקו מקושט",
+      "category": "סט קידוש",
+      "price": 950,
+      "stock": 45,
+      "productImage": "erko-mekushat1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "מגש חלה 'המוציא' מלבני עץ וציפוי כסף",
+      "category": "מגשי חלה וסכינים",
+      "price": 450,
+      "stock": 45,
+      "productImage": "magash-chala-hamotzi.jpg"
+    }
+  ]
+  

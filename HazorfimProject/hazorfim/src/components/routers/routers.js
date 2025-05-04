@@ -14,7 +14,7 @@ const AppRoutes = () => {
                     <Route 
                         key={link.link} 
                         path={link.link} 
-                        element={<CategoryPage  />} // Pass category name as a prop
+                        element={<CategoryPage categoryName={link.name}/>} // Pass category name as a prop
                     />
                 ))}
                 {/* צריך להוסיף אופציות ניתוב */}

@@ -11,8 +11,8 @@ function App() {
 <>
   <AppRoutes></AppRoutes>
 <Navbar2></Navbar2>
-<CategoryDisplay categoryName="קידוש ויין" />
-            <CategoryDisplay categoryName="שולחן שבת" />
+{/* <CategoryDisplay categoryName="קידוש ויין" />
+<CategoryDisplay categoryName="שולחן שבת" /> */}
 {/* <LoginPopup></LoginPopup> */}
 </>
   );
