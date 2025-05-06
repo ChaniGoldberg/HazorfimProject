@@ -1,7 +1,11 @@
-*{
+* {
   direction: rtl;
 }
+
 .navbar {
+  position: sticky; /* שומר את ה-navbar במקום בעת גלילה */
+  top: 0; /* מיקום עליון */
+  z-index: 1000; /* מבטיח שה-navbar יהיה מעל אלמנטים אחרים */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,19 +30,33 @@
 }
 
 .nav-links {
-  list-style-type: none;
+  list-style-type: none; /* לא נחוץ כאן, אבל אפשר להשאיר */
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.nav-links li {
-  margin-right: 1rem;
+.nav-links a {
+  color: #36012a; /* צבע לינק */
+  text-decoration: none; /* הסרת קו תחתון */
+  padding: 0.5rem 1rem; /* רווחים סביב הלינק */
+  position: relative; /* להחזיק את ה-pseudo-element */
 }
 
-.nav-links a {
-  color: #36012a;
-  text-decoration: none;
+.nav-links a:before {
+  content: ''; /* יצירת pseudo-element עבור הקו התחתון */
+  position: absolute;
+  background-color: #36012a; /* צבע הקו התחתון */
+  height: 2px; /* עובי הקו */
+  width: 0; /* מתחיל עם רוחב 0 */
+  bottom: -5px; /* הזזת הפס למטה מהלינק */
+  left: 50%; /* מתחיל מהמרכז */
+  transition: width 0.4s ease, left 0.4s ease; /* אנימציה על hover */
+}
+
+.nav-links a:hover:before {
+  width: 100%; /* מתרחב לרוחב מלא על hover */
+  left: 0; /* זז להתחיל מהשמאל */
 }
 
 .navbar-right {
@@ -51,38 +69,4 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 200px;
-}
-.nav-links {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  position: relative; /* Set position to enable absolute positioning for the underline */
-  margin-right: 1rem;
-}
-
-.nav-links a {
-  color: #36012a; /* Link color */
-  text-decoration: none; /* Remove default underline */
-  padding: 0.5rem 0; /* Add some vertical padding */
-  position: relative; /* Position relative to contain the pseudo-element */
-}
-
-.nav-links a:before {
-  content: ''; /* Create a pseudo-element for the underline */
-  position: absolute;
-  background-color: #36012a; /* Color of the underline */
-  height: 2px; /* Thickness of the underline */
-  width: 0; /* Start with width 0 */
-  bottom: 0; /* Position it at the bottom of the link */
-  left: 50%; /* Start from the center */
-  transition: width 0.4s ease, left 0.4s ease; /* Animate on hover */
-}
-
-.nav-links a:hover:before {
-  width: 100%; /* Expand to full width on hover */
-  left: 0; /* Shift to start from the left */
 }

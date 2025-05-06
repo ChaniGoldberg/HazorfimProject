@@ -1,19 +1,26 @@
-// import React from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import style from '../../styles/PopupToNav.css'; // Import your CSS file
+import { links } from '../../constants/links';
 
-const PopupToNav = ({ title, listItems, imageUrl, onClose }) => {
+const PopupToNav = ({ name, items, isVisible }) => {
+    if (!isVisible || !name) return null;
+
     return (
         <div className="popup">
-            <div className="popup-header">
-                <h2>{title}</h2>
-                <button onClick={onClose} className="close-button">×</button>
-            </div>
-            {imageUrl && <img src={imageUrl} alt={title} />}
+            <h3>{name}</h3>
             <ul>
-                {listItems.map((item, index) => (
-                    <li key={index}>
-                        <a href="#">{item}</a>
-                    </li>
-                ))}
+                {items.map((item, index) => {
+                    // חפש את האובייקט המתאים ב-links
+                    const linkObject = links.find(link => link.nameHebrew === item);
+                    const linkToUse = linkObject ? linkObject.link : '/'; // אם לא נמצא, השתמש בלינק ברירת מחדל
+
+                    return (
+                        <li key={index}>
+                            <Link to={linkToUse}>{item}</Link>
+                        </li>
+                    );
+                })}
             </ul>
         </div>
     );

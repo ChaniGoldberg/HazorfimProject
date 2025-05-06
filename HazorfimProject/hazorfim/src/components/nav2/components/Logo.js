@@ -1,4 +1,5 @@
 // Logo.js
+//display the shop logo
 import React from 'react';
 import logo from '../../../assests/logo.svg'; 
 

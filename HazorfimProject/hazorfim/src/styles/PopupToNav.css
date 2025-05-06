@@ -1,24 +1,31 @@
-
-
-
-
-.popup-content {
-    top: 60px;
-    position: relative; /* משנה את המיקום של הפופאפ עצמו */
-    margin-top: 20px; /* רווח מעל הפופאפ */
-    background: white; /* צבע הרקע של הפופאפ */
-    border-radius: 8px;
-    width: 60%; /* רוחב הפופאפ */
-    max-height: 400px; /* גובה מקסימלי של הפופאפ */
-   
+.popup {
+    position: absolute;
+    top: 60px; /* Adjust based on your layout */
+    left: 0;
+    width: 70%; /* One-third of the screen */
+    background-color: white; /* Background color */
+    border: 1px solid #ccc; /* Border style */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    z-index: 1000; /* Ensure it appears above other elements */
+    padding: 10px; /* Padding inside the popup */
 }
 
-.list-container {
-    display: flex;
-    justify-content: space-between; /* Aligns columns */
+.popup h3 {
+    margin: 0 0 10px; /* Margin for the heading */
 }
 
-.column {
-    flex: 1; /* Allows columns to share available space */
-    margin: 10px; /* Adds space between columns */
+.popup ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
 }
+
+.popup li {
+    margin: 5px 0; /* Margin between items */
+}
+
+.popup a {
+    text-decoration: underline; /* Remove underline from links */
+    color: #430345; /* Link color */
+}
+
+

@@ -1,110 +1,128 @@
 export const links = [
     {
-        "name": "תפעול לאתר",
-        "link": "/תפעול-לאתר"
+        "name": "Exclusive-on-the-site",
+        "link": "/Exclusive-on-the-site",
+        "nameHebrew": "בלעדי באתר"
     },
     {
-        "name": "יום העצמאות",
-        "link": "/יום-העצמאות"
+        "name": "outlet",
+        "link": "/outlet",
+        "nameHebrew": "אאוטלט"
     },
     {
-        "name": "כלי שולחן מצופים כסף",
-        "link": "/כלי-שולחן-מצופים-כסף"
+        "name": "tableware-silver-plated",
+        "link": "/tableware-silver-plated",
+        "nameHebrew": "כלי שולחן מצופים כסף"
     },
     {
-        "name": "יודאיקה מצופים כסף",
-        "link": "/יודאיקה-מצופים-כסף"
+        "name": "judaica-silver-plated",
+        "link": "/judaica-silver-plated",
+        "nameHebrew": " judaica מצופים כסף"
+    },
+    // הניתובים שבפופאפ הראשון
+    {
+        "name": "Candlesticks",
+        "link": "/categories/candlesticks",
+        "nameHebrew": "פמוטים"
     },
     {
-        "name": "פמוטים",
-        "link": "/פמוטים"
+        "name": "Candelabras",
+        "link": "/categories/candelabras",
+        "nameHebrew": "קנדלברות"
     },
     {
-        "name": "קנדלברות",
-        "link": "/קנדלברות"
+        "name": "Menorahs",
+        "link": "/categories/menorahs",
+        "nameHebrew": "חנוכיות"
     },
     {
-        "name": "חנוכיות",
-        "link": "/חנוכיות"
+        "name": "Gift Card",
+        "link": "/gift-card",
+        "nameHebrew": "שובר מתנה"
     },
     {
-        "name": "כרטיס מתנה",
-        "link": "/כרטיס-מתנה"
+        "name": "kiddush-set",
+        "link": "/categories/kiddush-wine/kiddush-set",
+        "nameHebrew": "סט קידוש"
     },
     {
-        "name": "ספרי תורה",
-        "link": "/ספרי-תורה"
+        "name": "tzedaka-boxes",
+        "link": "/categories/shabbat-table/tzedaka-boxes",
+        "nameHebrew": "קופות צדקה"
     },
     {
-        "name": "עיצוב הבית",
-        "link": "/עיצוב-הבית"
-    },
-{
-    "name": "סט קידוש",
-    "link": "/סט-קידוש" 
-},
-    {
-        "name": "שולחן שבת",
-        "link": "/שולחן-שבת"
+        "name": "wine-liquor-bottles",
+        "link": "/categories/kiddush-wine/wine-liquor-bottles",
+        "nameHebrew": "בקבוקי יין וליקר"
     },
     {
-        "name": "מגשי חלה וסכינים",
-        "link": "/מגשי חלה וסכינים"
+        "name": "wine-fountains",
+        "link": "/categories/kiddush-wine/wine-fountains",
+        "nameHebrew": "מזרקות יין"
     },
     {
-        "name": "פריטי הבדלה",
-        "link": "/שולחן-שבת/פריטי-הבדלה"
+        "name": "challah-trays-knives",
+        "link": "/categories/shabbat-table/challah-trays-knives",
+        "nameHebrew": "מגשי חלות וסכינים"
     },
     {
-        "name": "כלי מים אחרונים",
-        "link": "/שולחן-שבת/כלי-מים-אחרונים"
+        "name": "salt-cellars",
+        "link": "/categories/shabbat-table/salt-cellars",
+        "nameHebrew": "מלחיות"
     },
     {
-        "name": "קופות צדקה",
-        "link": "/שולחן-שבת/קופות-צדקה"
+        "name": "netilat-yadaim",
+        "link": "/categories/shabbat-table/netilat-yadaim",
+        "nameHebrew": "נטילת ידיים"
     },
     {
-        "name": "מלחיות",
-        "link": "/שולחן-שבת/מלחיות"
+        "name": "mayim-achronim",
+        "link": "/categories/shabbat-table/mayim-achronim",
+        "nameHebrew": "מים אחרונים"
     },
     {
-        "name": "נטילת ידיים",
-        "link": "/שולחן-שבת/נטילת-ידיים"
+        "name": "liquor-cups",
+        "link": "/categories/kiddush-wine/liquor-cups",
+        "nameHebrew": "כוסות ליקר"
     },
     {
-        "name": "פריטי הדלקת נרות",
-        "link": "/שולחן-שבת/פריטי-הדלקת-נרות"
+        "name": "kiddush-plates",
+        "link": "/categories/kiddush-wine/kiddush-plates",
+        "nameHebrew": "צלחות קידוש"
     },
     {
-        "name": "Kiddush Set",
-        "link": "/kiddush-and-wine/kiddush-set"
+        "name": "kiddush-cups",
+        "link": "/categories/kiddush-wine/kiddush-cups",
+        "nameHebrew": "כוסות קידוש"
     },
     {
-        "name": "Kiddush Cups",
-        "link": "/kiddush-and-wine/kiddush-cups"
+        "name": "havdalah",
+        "link": "/categories/shabbat-table/havdalah",
+        "nameHebrew": "הבדלה"
     },
     {
-        "name": "Kiddush Plates",
-        "link": "/kiddush-and-wine/kiddush-plates"
-    },
-    {
-        "name": "Liquor Glasses",
-        "link": "/kiddush-and-wine/liquor-glasses"
+        "name": "candle-lighters",
+        "link": "/categories/shabbat-table/candle-lighters",
+        "nameHebrew": "מדליקי נרות"
     },
     {
         "name": "Wine Bottle",
-        "link": "/kiddush-and-wine/wine-bottle"
+        "link": "/kiddush-and-wine/wine-bottle",
+        "nameHebrew": "בקבוק ליין"
     },
     {
         "name": "Wine Dispenser",
-        "link": "/kiddush-and-wine/wine-dispenser"
+        "link": "/kiddush-and-wine/wine-dispenser",
+        "nameHebrew": "מחלק יין"
     },
     {
         "name": "Special Collections",
-        "link": "/special-collections"
+        "link": "/special-collections",
+        "nameHebrew": "קולקציות מיוחדות"
     },
     {
         "name": "Holidays and Festivals",
-        "link": "/holidays-and-festivals"
+        "link": "/holidays-and-festivals",
+        "nameHebrew": "חגים ומועדים"
     }
 ];

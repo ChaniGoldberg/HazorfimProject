@@ -1,11 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
-// טען את המידע על המוצרים מקובץ JSON
 import productsData from '../../constants/products.json'; // עדכן את הנתיב לפי מיקום הקובץ
 
-const images = require.context('../../assests/productImages', false, /\.(png|jpe?g|svg)$/);
+
+// טעינת התמונות
+const images = require.context('../../assests/productImages', false, /.(png|jpe?g|svg)$/);
 const imageList = images.keys().reduce((acc, image) => {
-  acc[image.replace('./', '')] = images(image);
-  return acc;
+acc[image.replace('./', '')] = images(image);
+return acc;
 }, {});
 
 
@@ -30,6 +31,7 @@ const productsSlice = createSlice({
     // אפשר להוסיף reducers נוספים לפי הצורך
   },
 });
-//ייצוא
+
+// ייצוא
 export const { updateStock } = productsSlice.actions;
 export default productsSlice.reducer;

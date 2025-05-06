@@ -1,4 +1,3 @@
-// Navbar.js
 import React from 'react';
 import '../../styles/Navbar2.css';
 import Logo from './components/Logo.js';
@@ -9,7 +8,7 @@ const Navbar2 = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <Logo />
+        <Logo className="logo" />
       </div>
       <div className="navbar-center">
         <NavLinks />
