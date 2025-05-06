@@ -1,0 +1,28 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Set a width for the popup */
+    max-height: 80%; /* Limit the height of the popup */
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollable-content {
+    max-height: 300px; /* Set a max height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 10px; /* Space between content and close button */
+}

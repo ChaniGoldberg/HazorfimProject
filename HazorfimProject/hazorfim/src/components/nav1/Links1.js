@@ -3,6 +3,8 @@ import '../../styles/Links1.css';
 import { TiUserAddOutline, TiLocationOutline, TiHeartOutline, TiShoppingCart } from "react-icons/ti";
 import Branches from './Branches';
 import Basket from './Basket';
+import AccountComponent from './AccountComponent ';
+import Favorites from './Favorites';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Links1 = () => {
@@ -18,14 +20,14 @@ const Links1 = () => {
               </Link>
             </li>
             <li>
-              <Link to="/Basket">
+              <Link to="/AccountComponent">
                 <p>כניסה</p>
                 <TiUserAddOutline />
                 <p></p>
               </Link>
             </li>
             <li>
-              <Link to="/Basket">
+              <Link to="/Favorites">
               <p>מועדפים</p>
                 <TiHeartOutline />              
               </Link>
@@ -44,8 +46,9 @@ const Links1 = () => {
       </div>
       <Routes>
         <Route path="/Basket" element={<Basket />} />
-        <Route path="/" element={<Basket />} />
+        <Route path="/AccountComponent" element={<AccountComponent />} />
         <Route path="/Branches" element={<Branches />} />
+        <Route path="/Favorites" element={<Favorites />} />
       </Routes>
     </Router>
   );

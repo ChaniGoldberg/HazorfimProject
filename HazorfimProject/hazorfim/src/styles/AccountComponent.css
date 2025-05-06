@@ -1,0 +1,104 @@
+/* AccountComponent.css */
+
+.account-container {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+    text-decoration: rtl;
+
+}
+.enter-text{
+    text-align: center;
+}
+
+button {
+    border: 2px solid #000; /* Change border style */
+    border-radius: 5px; /* Change border radius */
+    padding: 10px; /* Add padding */
+}
+input {
+    direction: rtl; /* For right-to-left text direction */
+    text-align: right; /* Aligns text to the right */
+}
+.button-container {
+    display: flex;
+    width: 100%;
+}
+
+button {
+    flex: 1; /* This will make each button take 50% of the width */
+    width: 50%; /* Optional, as flex: 1 will handle it */
+}
+
+h2 {
+    color: #4b297d;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #4b297d;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4b297d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b297d;
+}
+.remember-me{
+    display: flex;
+}
+.remember-me {
+    display: flex;
+    align-items: center; /* Aligns items vertically centered */
+}
+
+.remember-me input {
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.active {
+    background-color: #4b297d;
+    color: white;
+}
+
+.link {
+    color: #4b297d;
+    cursor: pointer;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.popup {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

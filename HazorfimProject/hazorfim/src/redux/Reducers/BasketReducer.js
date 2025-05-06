@@ -1,4 +1,4 @@
-import { ADD_PRODUCT, DELETE_PRODUCT, UPDATE_COUNT_PRODUCT, GET_ALL_PRODUCTS } from "../ActionsTypes";
+import { ADD_PRODUCT, DELETE_PRODUCT, UPDATE_COUNT_PRODUCT, GET_ALL_BASKET_PRODUCTS } from "../ActionsTypes";
 export const initialState = {
     products: [],
     count: [],
@@ -52,27 +52,29 @@ export const BasketReducer = (state = initialState, action) => {
             }
         case DELETE_PRODUCT:
             const x = findIndex(action.payload, state.products);
+
+            if (x === -1) {
+                return state; // If the product is not found, return the current state
+            }
+
             return {
                 ...state,
-                products: state.products.splice(x, 1),
-                price: state.price.splice(x, 1),
-                count: state.count.splice(x, 1),
-                totalPrice: state.totalPrice.splice(x, 1),
+                products: state.products.filter((_, index) => index !== x),
+                price: state.price.filter((_, index) => index !== x),
+                count: state.count.filter((_, index) => index !== x),
+                totalPrice: state.totalPrice.filter((_, index) => index !== x),
             };
         case UPDATE_COUNT_PRODUCT:
             const i = findIndex(action.payload.product, state.products);
-            const updatedProducts = state.products.map(product => {
-
-                return {
-                    ...state,
-                    count: state.count[i] = action.payload.count, // Update the count in the state
-                    totalPrice: state.totalPrice[i] = action.payload.product.price * action.payload.count // Assuming count is the new count for the product
-                };
-
-    
-            });
-            return { ...state, products: updatedProducts };
-        case GET_ALL_PRODUCTS:
+            const newCount= Number(action.payload.count)
+            return {
+                ...state,
+                products: state.products, // Assuming you want to keep this unchanged
+                price: state.price, // Assuming you want to keep this unchanged
+                count: state.count.map((c, index) => index === i ? newCount : c), // Update specific index
+                totalPrice: state.totalPrice.map((tp, index) => index === i ? (action.payload.product.price * newCount) : tp) // Update specific index
+            };            
+        case GET_ALL_BASKET_PRODUCTS:
             const getAllProducts = action.payload.products;
             return state.products;
         default:

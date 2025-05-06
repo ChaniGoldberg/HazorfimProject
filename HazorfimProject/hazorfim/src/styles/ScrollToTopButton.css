@@ -1,0 +1,15 @@
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 40px; /* Smaller button size */
+    height: 40px; /* Smaller button size */
+    border-radius: 50%; /* Circular button */
+    background-color: #4b297d; /* Button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000; /* Ensure it's on top of other elements */
+    font-size: 20px; /* Adjust font size if necessary */
+}

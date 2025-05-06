@@ -1,0 +1,60 @@
+#OrderSummaryCard {
+    width: 100%; /* Full width for the Order Summary */
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+.UserClub {
+    margin-bottom: 20px;
+}
+
+.clubButton {
+    background-color: #4b297d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.clubText {
+    margin-left: 10px;
+}
+
+.OrderSummery {
+    margin-bottom: 20px;
+}
+
+.forPaying {
+    background-color: #4b297d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Popup styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    width: 50%; /* Half of the page width */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+.popup-content h2 {
+    color: #4b297d;
+}

@@ -7,6 +7,8 @@ import { Provider } from 'react-redux';
 import { Store } from './redux/Store';
 import {createStore,combineReducers} from 'redux';
 import rootReducer from './redux/Store';
+import PayWithGoogle from './components/nav1/PayWithGoogle';
+import ScrollToTopButton from './components/ScrollToTopButton';
 function App() {
   return (
     <div>
@@ -14,6 +16,8 @@ function App() {
         <Links></Links>
         {/* <Branches></Branches>
         <Basket></Basket> */}
+       {/* <PayWithGoogle></PayWithGoogle> */}
+        <ScrollToTopButton></ScrollToTopButton>
         </Provider>
     </div>
   );

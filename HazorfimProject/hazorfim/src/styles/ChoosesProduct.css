@@ -1,0 +1,40 @@
+#ChoosesProductCard {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end; 
+    flex-wrap: wrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 33vw;
+
+}
+
+#rightSideDetiles {
+    flex: 1;
+    color: black;
+    text-align: right;
+}
+
+#leftSideDetailes {
+    flex: 1;
+    text-align: left;
+    color: #4b297d;
+}
+
+button {
+    background-color: #4b297d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: gray;
+}

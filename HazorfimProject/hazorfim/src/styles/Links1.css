@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(252, 250, 252);
-  padding: 10px 20px;
+  padding: 5px 10px;
 }
 
 .navbar-center {
@@ -26,7 +26,7 @@ body {
 }
 
 .nav-links li {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .nav-links a {
@@ -41,7 +41,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: purple; /* Change color on hover */
+  color: #4b297d; /* Change color on hover */
 }
 
 .navbar-left .logo {
