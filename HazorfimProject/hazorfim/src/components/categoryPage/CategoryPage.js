@@ -9,15 +9,14 @@ import ProductCard from "./components/ProductCard.js";
 import ProductCategory from "./components/ProductCategory.js";
 import CategoryDisplay from "./components/CategoryDisplay.js";
 import CategoryPicture from "./components/CategoryPicture.js";
-import FilterAndSort from "./components/NavFilterAndSort.js";
-import NavFilterAndSort from "./components/NavFilterAndSort.js";
+
+
 
 const CategoryPage = ({ categoryName }) => {
   return (
     <>
     <CategoryPicture categoryName={categoryName}/>
-    <CategoryDisplay categoryName={categoryName}/>
-    <NavFilterAndSort></NavFilterAndSort>
+    {/* <CategoryDisplay categoryName={categoryName}/>     */}
       <Provider store={store}>
         <ProductCategory categoryName={categoryName}/>
       </Provider>

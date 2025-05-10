@@ -7,7 +7,8 @@
     "stock": 10,
     "productImage": "martel1.jpg",
     "material": "silver",
-    "size": "S"
+    "size": "S",
+    "inSite": false
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "stock": 5,
     "productImage": "set-palgrin-kal1.jpg",
     "material": "gold",
-    "size": "M"
+    "size": "M",
+    "inSite": false
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "stock": 5,
     "productImage": "chatan-Bolero-chalak.jpg",
     "material": "silver",
-    "size": "L"
+    "size": "L",
+    "inSite": false
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "stock": 5,
     "productImage": "bokati.jpg",
     "material": "silver",
-    "size": "L"
+    "size": "L",
+    "inSite": false
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "stock": 45,
     "productImage": "erko-mekushat1.jpg",
     "material": "silver",
-    "size": "L"
+    "size": "L",
+    "inSite": false
   },
   {
     "id": 6,
@@ -57,6 +62,63 @@
     "stock": 45,
     "productImage": "magash-chala-hamotzi.jpg",
     "material": "silver",
-    "size": "L"
+    "size": "L",
+    "inSite": false
+  },
+  {
+    "id": 7,
+    "name": "צלחת המרינג גדולה מצופה כסף",
+    "category": "kiddush-plates",
+    "price": 250,
+    "stock": 12,
+    "productImage": "hamring-plate.jpg",
+    "material": "silver",
+    "size": "M",
+    "inSite": true
+  },
+  {
+    "id": 8,
+    "name": "צלחת מרגריטה",
+    "category": "kiddush-plates",
+    "price": 529,
+    "stock": 10,
+    "productImage": "margarita.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": true
+  },
+  {
+    "id": 9,
+    "name": "צלחת קובלט חלקה",
+    "category": "kiddush-plates",
+    "price": 1529,
+    "stock": 30,
+    "productImage": "kovlet.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+  {
+    "id": 10,
+    "name": "צלחת פיליגרין מסט",
+    "category": "kiddush-plates",
+    "price": 709,
+    "stock": 45,
+    "productImage": "piligrin.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+  {
+    "id": 11,
+    "name": "צלחת אשכול ענבים",
+    "category": "kiddush-plates",
+    "price": 1230,
+    "stock": 45,
+    "productImage": "eshcol.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
   }
+  
 ]

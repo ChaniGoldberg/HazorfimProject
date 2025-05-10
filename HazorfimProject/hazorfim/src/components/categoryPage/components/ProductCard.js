@@ -4,6 +4,11 @@ import '../../../styles/ProductCard.css';
 
 const ProductCard = ({ product }) => {
   const [isModalOpen, setModalOpen] = useState(false);
+  console.log(product);
+  //
+  if (!product) {
+    return <div>מוצר לא זמין</div>; // או כל הודעת שגיאה אחרת
+  }
   
   return (
     <div className="product-card">
