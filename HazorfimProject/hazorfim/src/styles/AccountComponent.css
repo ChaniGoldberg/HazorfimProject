@@ -1,15 +1,33 @@
 /* AccountComponent.css */
-
-.account-container {
+/* styles.css */
+.bodyLight {
     background-color: white;
     color: black;
+}
+
+.bodyDark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+.account-container {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px;
     margin: auto;
     text-decoration: rtl;
-
+margin-top: 10vh;
+background-color: white;
 }
 .enter-text{
     text-align: center;

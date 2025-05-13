@@ -24,9 +24,11 @@ const Basket = () => {
   return (
     //dispatch(addProduct({name:"gavia",price:999},count=3)),
     <>
+    <div className="myBasket">
       <h1>סל קניות</h1>
       <ChoosesProduct ></ChoosesProduct>
       <OrderSummary></OrderSummary>
+      </div>
     </>
   )
 }

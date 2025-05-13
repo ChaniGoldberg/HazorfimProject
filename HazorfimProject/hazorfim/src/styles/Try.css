@@ -1,14 +1,10 @@
-.branches_picture{
-    width: 100%;
-    height: 30%;
-}
 /* styles.css */
-.bodyLight {
+.light {
     background-color: white;
     color: black;
 }
 
-.bodyDark {
+.dark {
     background-color: black;
     color: white;
 }

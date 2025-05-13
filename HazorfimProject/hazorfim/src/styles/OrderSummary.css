@@ -1,8 +1,23 @@
+/* styles.css */
+.bodyLight {
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+.bodyDark {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
 #OrderSummaryCard {
     width: 100%; /* Full width for the Order Summary */
     padding: 20px;
     background-color: white;
     color: black;
+    direction: rtl;
+    text-align: center;
 }
 
 .UserClub {
@@ -15,10 +30,12 @@
     border: none;
     padding: 10px;
     cursor: pointer;
+    width: 10vw;
 }
 
 .clubText {
     margin-left: 10px;
+    width: 10vw;
 }
 
 .OrderSummery {

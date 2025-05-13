@@ -1,3 +1,13 @@
+.light {
+  background-color: white; /* Light theme background */
+  color: black; /* Light theme text color */
+}
+
+.dark {
+  background-color: black; /* Dark theme background */
+  color: white; /* Dark theme text color */
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -9,7 +19,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(252, 250, 252);
   padding: 5px 10px;
 }
 
@@ -22,7 +31,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 5vw
+  margin-left: 5vw;
 }
 
 .nav-links li {
@@ -31,13 +40,13 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: rgb(52, 4, 52);
   display: flex;
   align-items: center;
+  color: inherit; /* Inherit color from parent */
 }
 
 .nav-links a p {
-  margin-right: 5; /* Space between icon and text */
+  margin-right: 5px; /* Space between icon and text */
 }
 
 .nav-links a:hover {
@@ -45,9 +54,24 @@ body {
 }
 
 .navbar-left .logo {
-  color: rgb(6, 6, 6);
   font-weight: bold;
 }
-#conect{
+
+#conect {
   margin-right: 40vw;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 5vw;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+/* Additional styles for the theme toggle button */
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-left: 35vw;
 }

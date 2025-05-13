@@ -1,3 +1,14 @@
+/* styles.css */
+.bodyLight {
+  background-color: white;
+  color: black;
+}
+
+.bodyDark {
+  background-color: black;
+  color: white;
+}
+
 label {
     font: 400 16px/24px Roboto, Noto Sans, Noto Sans JP, Noto Sans KR,
       Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali,
@@ -6,6 +17,7 @@ label {
   
   form {
     display: inline-block;
+    background-color: white;
   }
   
   form.top-bottom {
