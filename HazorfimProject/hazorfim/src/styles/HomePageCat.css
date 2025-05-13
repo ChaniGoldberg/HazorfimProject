@@ -1,0 +1,30 @@
+body {
+  margin: 20px; /* מרווח מכל הצדדים */
+}
+.category-container {
+  display: flex; /* מאפשר תמונות אחת לצד השנייה */
+  flex-wrap: nowrap; /* לא לאפשר שורות חדשות */
+  overflow-x: auto; /* לאפשר גלילה אופקית אם התמונות לא נכנסות */
+}
+
+
+.category-item {
+  margin: 10px; /* רווח בין הכרטיסים */
+  text-align: right; /* מרכז את הטקסט לימין */
+  width: 400px; /* רוחב הכרטיס */
+  overflow: hidden; /* חותך תוכן שנמצא מחוץ לגבול */
+  box-shadow: none; /* מסיר את הצל */
+}
+
+.category-image {
+  width: 100%; /* תמונה תתאים לרוחב הכרטיס */
+  height: auto; /* גובה יתאים באופן יחסי */
+}
+
+.category-item h3 {
+  float: right; /* ממקם את הכותרת בצד ימין */
+}
+
+.category-item a {
+  float: left; /* ממקם את הלינק בצד שמאל */
+}

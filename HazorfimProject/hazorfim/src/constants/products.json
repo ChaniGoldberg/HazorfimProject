@@ -119,6 +119,38 @@
     "material": "silver",
     "size": "L",
     "inSite": false
+  },  {
+    "id": 12,
+    "name": "סט 6 כוסות יין קריסטל רגל זהב",
+    "category": "wine-bottle",
+    "price": 520,
+    "stock": 45,
+    "productImage": "kristal.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+    {
+    "id": 13,
+    "name": "בקבוק יין דה וינצ'י 1.2 ליטר",
+    "category": "wine-bottle",
+    "price": 5200,
+    "stock": 45,
+    "productImage": "de-vintzi.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+    {
+    "id": 14,
+    "name": "בקבוק ליקר מרגריטה",
+    "category": "wine-bottle",
+    "price": 3000,
+    "stock": 45,
+    "productImage": "liker-margarital.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
   }
   
 ]

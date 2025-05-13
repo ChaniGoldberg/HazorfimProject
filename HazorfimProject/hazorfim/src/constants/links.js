@@ -58,7 +58,7 @@ export const links = [
     {
         "name": "wine-fountains",
         "link": "/categories/kiddush-wine/wine-fountains",
-        "nameHebrew": "מזרקות יין"
+        "nameHebrew": "מחלק יין"
     },
     {
         "name": "challah-trays-knives",

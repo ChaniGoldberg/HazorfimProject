@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 // import style from'../../../styles/FilterPopup.css'
+//פופאפ לסינון מוצרים
 const FilterPopup = ({ onFilterChange }) => {
   const [price, setPrice] = useState(null);
   const [size, setSize] = useState(null);
