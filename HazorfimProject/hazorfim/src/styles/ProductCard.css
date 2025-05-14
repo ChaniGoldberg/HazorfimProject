@@ -58,3 +58,8 @@
 .view-button {
   color: #007bff;
 }
+.product-exclusive {
+  color: purple; /* צבע סגול */
+  font-weight: bold; /* אם תרצה שהטקסט יהיה מודגש */
+  margin-top: 10px; /* מרווח מעל ההודעה */
+}

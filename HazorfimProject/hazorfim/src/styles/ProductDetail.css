@@ -1,0 +1,43 @@
+.product-detail-unique {
+  max-width: 600px; /* גובה מקסימלי לרכיב */
+  margin: 20px auto; /* ממרכז את הרכיב */
+  padding: 20px; /* ריווח פנימי */
+  background-color: #fff; /* צבע רקע */
+}
+
+.product-name-unique {
+  font-size: 24px; /* גודל טקסט */
+  font-weight: bold; /* משקל טקסט */
+  margin-bottom: 10px; /* ריווח תחתון */
+}
+
+.product-image-unique {
+  max-width: 100%; /* תמונה תתאים לרוחב של הרכיב */
+  height: 400px; /* גובה קבוע לתמונה */
+  object-fit: cover; /* שומר על יחס התמונה */
+  border-radius: 4px; /* פינות מעוגלות לתמונה */
+  margin-bottom: 15px; /* ריווח תחתון */
+}
+
+.product-price-unique {
+  font-size: 20px; /* גודל טקסט */
+  color: #333; /* צבע טקסט */
+  margin-bottom: 20px; /* ריווח תחתון */
+}
+
+.add-to-cart-button-unique,
+.add-to-favorites-button-unique {
+  padding: 10px 15px; /* ריווח פנימי */
+  margin-right: 10px; /* ריווח בין הכפתורים */
+  border: none; /* ללא גבול */
+  border-radius: 5px; /* פינות מעוגלות */
+  cursor: pointer; /* מצביע עכבר */
+  background-color: #6f42c1; /* צבע רקע סגול */
+  color: white; /* צבע טקסט לבן */
+  transition: background-color 0.3s; /* אנימציה לשינוי צבע */
+}
+
+.add-to-cart-button-unique:hover,
+.add-to-favorites-button-unique:hover {
+  background-color: #5a32a3; /* צבע רקע כהה יותר בעת ריחוף */
+}
