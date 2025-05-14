@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 //import { getAllBasketProducts, updateCountProduct, deleteProduct, addProduct } from '../../redux/Actions'
-import { addProduct, deleteProduct, updateCountProduct } from '../../redux/slices/basketSlice'; 
+import { addProductAndUpdateStock, deleteProduct, updateCountProduct } from '../../redux/slices/basketSlice'; 
 import ChoosesProduct from './ChoosesProduct'
 import OrderSummary from './OrderSummary' 
 const Basket = () => {
@@ -10,9 +10,9 @@ const Basket = () => {
 
   useEffect(() => {
     // Condition to check if products array is empty
-    dispatch(addProduct({product: { name: "kufsa",price: 597 }, price: 6}));
-    dispatch(addProduct({product:{ name: "gavia",price: 999 },price: 3}));
-    dispatch(addProduct({ product:{name: "pamot",price: 1022 }, price: 8}));
+    dispatch(addProductAndUpdateStock({product: { name: "kufsa",price: 597 }, price: 6}));
+    dispatch(addProductAndUpdateStock({product:{ name: "gavia",price: 999 },price: 3}));
+    dispatch(addProductAndUpdateStock({ product:{name: "pamot",price: 1022 }, price: 8}));
     console.log('Products added on first load');
 
   }, []);

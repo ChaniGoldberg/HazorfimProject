@@ -1,0 +1,19 @@
+.ad-banner {
+    background-color:rgb(52, 3, 52); /* רקע סגול כהה */
+    color: white; /* אותיות לבנות */
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* מרכז את המלל */
+    align-items: center;
+    position: relative; /* מאפשר למקם את כפתור ה-X */
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute; /* ממקם את כפתור ה-X */
+    right: 10px; /* מרחק מהקצה הימני */
+}

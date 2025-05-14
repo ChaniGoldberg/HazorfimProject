@@ -2,7 +2,7 @@ import "../../styles/ChoosesProduct.css"
 
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
-import { addProduct, deleteProduct, updateCountProduct } from '../../redux/slices/basketSlice'; 
+import { addProductAndUpdateStock, deleteProduct, updateCountProduct } from '../../redux/slices/basketSlice'; 
  export const ChoosesProduct = () => {
 
     const dispatch = useDispatch();

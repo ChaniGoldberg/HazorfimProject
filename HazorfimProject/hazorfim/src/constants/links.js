@@ -1,3 +1,4 @@
+//צריך לטפל בזה
 export const links = [
     {
         "name": "Exclusive-on-the-site",

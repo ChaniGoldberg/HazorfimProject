@@ -5,8 +5,8 @@ import productsData from '../../constants/products.json'; // עדכן את הנ�
 // טעינת התמונות
 const images = require.context('../../assests/productImages', false, /.(png|jpe?g|svg)$/);
 const imageList = images.keys().reduce((acc, image) => {
-acc[image.replace('./', '')] = images(image);
-return acc;
+  acc[image.replace('./', '')] = images(image);
+  return acc;
 }, {});
 
 
@@ -22,10 +22,9 @@ const productsSlice = createSlice({
   initialState,
   reducers: {
     updateStock(state, action) {
-      const { id, amount } = action.payload;
-      const product = state.products.find(product => product.id === id);
-      if (product) {
-        product.stock += amount; // עדכון כמות המלאי
+      const product = state.products.find(product =>product.id ===  action.payload.product.id);
+      if (product && product.stock >= action.payload.count) {
+        product.stock -=  action.payload.count // עדכון כמות המלאי
       }
     },
     // אפשר להוסיף reducers נוספים לפי הצורך

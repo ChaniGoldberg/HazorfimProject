@@ -11,8 +11,11 @@ const basketSlice = createSlice({
         totalPrice: []
     },
     reducers: {
-        addProduct(state, action) {
+        addProductAndUpdateStock(state, action) {
             const index = state.products.findIndex(product => product.name === action.payload.product.name);
+            // if(action.payload.product.stock<action.payload.count){
+                
+            // }
             if (index === -1) {
                 state.products.push(action.payload.product);
                 state.count.push(action.payload.count);
@@ -53,5 +56,5 @@ const basketSlice = createSlice({
 //     }
 // });
 
-export const { getAllBasketProducts,updateCountProduct,deleteProduct,addProduct } = basketSlice.actions;
+export const { getAllBasketProducts,updateCountProduct,deleteProduct,addProductAndUpdateStock } = basketSlice.actions;
 export default basketSlice.reducer;

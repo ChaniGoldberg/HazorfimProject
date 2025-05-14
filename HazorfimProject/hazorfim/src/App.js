@@ -12,6 +12,7 @@ import AppRoutes from './components/routers/AppRouters.js';
 import DisplayCategory from './components/categoryPage/components/CategoryDisplay.js';
 import CategoryDisplay from './components/categoryPage/components/CategoryDisplay.js';
 import NavLinks from './components/nav2/components/NavLinks.js';
+import AdBanner from './components/AdBanner/AdBanner.js';
 function App() {
   
   return (
@@ -22,6 +23,7 @@ function App() {
         <ThemeProvider>
           <Nav1 />
           <Router>
+        <AdBanner></AdBanner>
         <Navbar2></Navbar2>
         <AppRoutes /> {/* כל הניתובים שלך כאן */}
       </Router>
@@ -29,6 +31,7 @@ function App() {
         </ThemeProvider>
       </Provider>
     </div>
+
 
   );
 }

@@ -5,14 +5,14 @@ const Favorites = () => {
     // Get the favorite products array from the store
     const dispatch = useDispatch();
     const favoriteProducts = dispatch(getAllFavoritesProducts());
-
+console.log(favoriteProducts);
     return (
         <div>
             <h2>My Favorite Products</h2>
             <div>
                 {favoriteProducts && favoriteProducts.length > 0 ? (
                     favoriteProducts.map((product) => (
-                        <p></p>
+                        <p>{product.name}</p>
                         //<FavoriteProduct key={product.id} product={product} />
                     ))
                 ) : (

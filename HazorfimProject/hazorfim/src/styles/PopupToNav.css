@@ -37,4 +37,6 @@
 
 
 
-
+.popup a:hover::after {
+    width: 100%; /* Expand the width on hover */
+}
