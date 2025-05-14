@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import ProductCard from './ProductCard';
 import FilterPopup from './FilterPopup'; // קומפוננטת הפופאפ
+import style from '../../../styles/ProductCategory.css'; // הוספת הסטיילים
 
 //הקומפוננטה שמזמנת את כרטיס הצגת המוצרים
 const ProductCategory = ({ categoryName }) => {
@@ -25,15 +26,16 @@ const ProductCategory = ({ categoryName }) => {
   };
 
   return (
-    <>
-  
-      <button onClick={() => setShowPopup(true)}>סנן</button>
-      {showPopup && <FilterPopup onFilterChange={handleFilterChange} />}
-      
+  <>
+    <button onClick={() => setShowPopup(true)}>סנן</button>
+    {showPopup && <FilterPopup onFilterChange={handleFilterChange} />}
+
+    <div className="products-list"> {/* הוסף את ה-div הזה */}
       {categoryProducts.map((pro) => (
         <ProductCard key={pro.id} product={pro} />
       ))}
-    </>
+    </div>
+  </>
   );
 };
 

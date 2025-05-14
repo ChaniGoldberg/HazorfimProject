@@ -1,0 +1,5 @@
+.products-list {
+  display: flex; /* משתמש בתצוגת flex כדי לסדר את הכרטיסים אחד ליד השני */
+  flex-wrap: wrap; /* מאפשר לכרטיסים לעבור לשורה הבאה אם אין מקום */
+  justify-content: space-between; /* מפזר את הכרטיסים באופן שווה */
+}

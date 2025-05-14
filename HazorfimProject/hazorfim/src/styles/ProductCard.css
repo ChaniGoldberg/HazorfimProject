@@ -6,12 +6,12 @@
 }
 
 .product-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: none; /* הסר את המסגרת */
+  border-radius: 8px; /* אם תרצה לשמור על פינות מעוגלות */
   padding: 16px;
-  margin: 10px;
+  margin: 5px; /* צמצם את המרווח בין הכרטיסים */
   width: 200px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: none; /* הסר את הצל */
   transition: transform 0.2s;
 }
 
