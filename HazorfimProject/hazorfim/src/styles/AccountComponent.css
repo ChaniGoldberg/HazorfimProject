@@ -110,6 +110,7 @@ button:hover {
 }
 
 .popup {
+    width: 20vw;
     background-color: white;
     color: black;
     padding: 20px;

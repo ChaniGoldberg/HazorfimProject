@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Links1 from './components/nav1/Links1';
+import Nav1 from './components/nav1/Nav1';
 import { Provider } from 'react-redux';
 import { Store } from './redux/Store';
 import { ThemeProvider } from './components/globalComponants/ThemeContext'; // Import the ThemeProvider
@@ -13,7 +13,7 @@ function App() {
         <ScrollToTopButton /> {/* Add the ScrollToTopButton here */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <ThemeProvider>
-          <Links1 />
+          <Nav1 />
           {/* Other components */}
         </ThemeProvider>
       </Provider>

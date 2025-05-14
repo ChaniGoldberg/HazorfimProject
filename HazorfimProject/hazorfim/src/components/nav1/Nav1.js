@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import '../../styles/Links1.css';
+import '../../styles/Nav1.css';
 import { TiUserAddOutline, TiLocationOutline, TiHeartOutline, TiShoppingCart } from "react-icons/ti";
 import Branches from './Branches';
 import Basket from './Basket';
@@ -8,7 +8,7 @@ import Favorites from './Favorites';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ThemeContext from '../globalComponants/ThemeContext';
 
-const Links1 = () => {
+const Nav1 = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
@@ -67,4 +67,4 @@ const Links1 = () => {
     </Router>
   );
 };
-export default Links1;
+export default Nav1;
