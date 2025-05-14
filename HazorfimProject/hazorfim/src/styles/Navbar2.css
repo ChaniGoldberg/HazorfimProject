@@ -1,0 +1,72 @@
+* {
+  direction: rtl;
+}
+
+.navbar {
+  position: sticky; /* שומר את ה-navbar במקום בעת גלילה */
+  top: 0; /* מיקום עליון */
+  z-index: 1000; /* מבטיח שה-navbar יהיה מעל אלמנטים אחרים */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 300px; 
+  margin-right: 5em;
+}
+
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style-type: none; /* לא נחוץ כאן, אבל אפשר להשאיר */
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #36012a; /* צבע לינק */
+  text-decoration: none; /* הסרת קו תחתון */
+  padding: 0.5rem 1rem; /* רווחים סביב הלינק */
+  position: relative; /* להחזיק את ה-pseudo-element */
+}
+
+.nav-links a:before {
+  content: ''; /* יצירת pseudo-element עבור הקו התחתון */
+  position: absolute;
+  background-color: #36012a; /* צבע הקו התחתון */
+  height: 2px; /* עובי הקו */
+  width: 0; /* מתחיל עם רוחב 0 */
+  bottom: -5px; /* הזזת הפס למטה מהלינק */
+  left: 50%; /* מתחיל מהמרכז */
+  transition: width 0.4s ease, left 0.4s ease; /* אנימציה על hover */
+}
+
+.nav-links a:hover:before {
+  width: 100%; /* מתרחב לרוחב מלא על hover */
+  left: 0; /* זז להתחיל מהשמאל */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}

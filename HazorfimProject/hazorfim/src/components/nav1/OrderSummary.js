@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
-import { getAllBasketProducts, updateCountProduct, deleteProduct } from '../../redux/Actions';
 import PaymentPopup from './PaymentPopup'; // Import the PaymentPopup component
 import "../../styles/OrderSummary.css";
 

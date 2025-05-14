@@ -2,8 +2,8 @@ import "../../styles/ChoosesProduct.css"
 
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
-import { getAllBasketProducts, updateCountProduct, deleteProduct } from '../../redux/Actions'
-export const ChoosesProduct = () => {
+import { addProduct, deleteProduct, updateCountProduct } from '../../redux/slices/basketSlice'; 
+ export const ChoosesProduct = () => {
 
     const dispatch = useDispatch();
     const products = useSelector((state) => state.basket.products);
@@ -15,7 +15,7 @@ export const ChoosesProduct = () => {
         console.log(product1)
         const updatedCount = prompt("Enter new count:");
         if (updatedCount !== null) {
-            dispatch(updateCountProduct(product1, updatedCount));
+            dispatch(updateCountProduct({product:{product1},count:{updatedCount}}));
         }
     }
     if (products.length === 0) {

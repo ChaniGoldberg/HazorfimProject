@@ -1,0 +1,60 @@
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.product-card {
+  border: none; /* הסר את המסגרת */
+  border-radius: 8px; /* אם תרצה לשמור על פינות מעוגלות */
+  padding: 16px;
+  margin: 5px; /* צמצם את המרווח בין הכרטיסים */
+  width: 200px;
+  box-shadow: none; /* הסר את הצל */
+  transition: transform 0.2s;
+}
+
+/* .product-card:hover {
+  transform: scale(1.05);
+} */
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-info {
+  text-align: center;
+}
+
+.product-name {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1em;
+  color: #333;
+}
+
+.favorite-button,
+.view-button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.favorite-button:hover,
+.view-button:hover {
+  background-color: #e0e0e0;
+}
+
+.view-button {
+  color: #007bff;
+}

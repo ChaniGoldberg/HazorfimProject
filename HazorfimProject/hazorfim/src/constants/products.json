@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "name": "סט גביע צלחת מרטל",
+    "category": "kiddush-set",
+    "price": 1340,
+    "stock": 10,
+    "productImage": "martel1.jpg",
+    "material": "silver",
+    "size": "S",
+    "inSite": false
+  },
+  {
+    "id": 2,
+    "name": "סט פלגרין קל",
+    "category": "kiddush-set",
+    "price": 1266,
+    "stock": 5,
+    "productImage": "set-palgrin-kal1.jpg",
+    "material": "gold",
+    "size": "M",
+    "inSite": false
+  },
+  {
+    "id": 3,
+    "name": "סט חתן בולרו חלק",
+    "category": "kiddush-set",
+    "price": 4521,
+    "stock": 5,
+    "productImage": "chatan-Bolero-chalak.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+  {
+    "id": 4,
+    "name": "סט קידוש בוגאטי",
+    "category": "kiddush-set",
+    "price": 2200,
+    "stock": 5,
+    "productImage": "bokati.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+  {
+    "id": 5,
+    "name": "סט גביע וצלחת ארקו מקושט",
+    "category": "kiddush-set",
+    "price": 9,
+    "stock": 45,
+    "productImage": "erko-mekushat1.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+  {
+    "id": 6,
+    "name": "מגש חלה 'המוציא' מלבני עץ וציפוי כסף",
+    "category": "מגשי חלה וסכינים",
+    "price": 450,
+    "stock": 45,
+    "productImage": "magash-chala-hamotzi.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+  {
+    "id": 7,
+    "name": "צלחת המרינג גדולה מצופה כסף",
+    "category": "kiddush-plates",
+    "price": 250,
+    "stock": 12,
+    "productImage": "hamring-plate.jpg",
+    "material": "silver",
+    "size": "M",
+    "inSite": true
+  },
+  {
+    "id": 8,
+    "name": "צלחת מרגריטה",
+    "category": "kiddush-plates",
+    "price": 529,
+    "stock": 10,
+    "productImage": "margarita.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": true
+  },
+  {
+    "id": 9,
+    "name": "צלחת קובלט חלקה",
+    "category": "kiddush-plates",
+    "price": 1529,
+    "stock": 30,
+    "productImage": "kovlet.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+  {
+    "id": 10,
+    "name": "צלחת פיליגרין מסט",
+    "category": "kiddush-plates",
+    "price": 709,
+    "stock": 45,
+    "productImage": "piligrin.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+  {
+    "id": 11,
+    "name": "צלחת אשכול ענבים",
+    "category": "kiddush-plates",
+    "price": 1230,
+    "stock": 45,
+    "productImage": "eshcol.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },  {
+    "id": 12,
+    "name": "סט 6 כוסות יין קריסטל רגל זהב",
+    "category": "wine-bottle",
+    "price": 520,
+    "stock": 45,
+    "productImage": "kristal.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+    {
+    "id": 13,
+    "name": "בקבוק יין דה וינצ'י 1.2 ליטר",
+    "category": "wine-bottle",
+    "price": 5200,
+    "stock": 45,
+    "productImage": "de-vintzi.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  },
+    {
+    "id": 14,
+    "name": "בקבוק ליקר מרגריטה",
+    "category": "wine-bottle",
+    "price": 3000,
+    "stock": 45,
+    "productImage": "liker-margarital.jpg",
+    "material": "silver",
+    "size": "L",
+    "inSite": false
+  }
+  
+]

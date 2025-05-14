@@ -1,0 +1,120 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* רקע כהה עם שקיפות */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* ודא שהמודל מעל כל התוכן */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; /* רוחב המודל */
+    max-width: 600px; /* רוחב מקסימלי */
+    position: relative;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* רקע כהה עם שקיפות */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* ודא שזה מעל כל תוכן אחר */
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .modal-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .modal-product-name {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .modal-product-price {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart-button,
+  .add-to-favorites-button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+.close-button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-body {
+    margin: 20px 0;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.confirm-button {
+    background-color: #4B0082; /* צבע סגול כהה */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background-color: #3a0066; /* גוון כהה יותר */
+}
+
+.cancel-button {
+    background: transparent;
+    border: 2px solid #4B0082; /* מסגרת סגולה */
+    color: #4B0082;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.cancel-button:hover {
+    background-color: #4B0082; /* שינוי צבע ברוורס */
+    color: white; /* צבע טקסט לבן על רקע סגול */
+}

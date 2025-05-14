@@ -1,11 +1,10 @@
 import React from 'react';
 import { useSelector ,useDispatch} from 'react-redux';
-import { getAllBasketProducts, updateCountProduct, deleteProduct } from '../../redux/Actions';
-//import FavoriteProduct from './FavoriteProduct';
+import { getAllFavoritesProducts,addFavoriteProduct, deleteFavoriteProduct } from '../../redux/slices/favoritesSlice';
 const Favorites = () => {
     // Get the favorite products array from the store
     const dispatch = useDispatch();
-    const favoriteProducts = useSelector((state) => state.favorites.favoriteProducts);
+    const favoriteProducts = dispatch(getAllFavoritesProducts());
 
     return (
         <div>

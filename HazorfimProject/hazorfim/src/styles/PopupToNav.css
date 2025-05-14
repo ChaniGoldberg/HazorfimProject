@@ -1,0 +1,40 @@
+.popup {
+    position: absolute;
+    top: 60px; /* Adjust based on your layout */
+    left: 0;
+    width: 75%; /* One-third of the screen */
+    background-color: white; /* Background color */
+    border: 1px solid #ccc; /* Border style */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    z-index: 1000; /* Ensure it appears above other elements */
+    padding: 10px; /* Padding inside the popup */
+    display: flex; /* Enable flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+}
+
+.popup h3 {
+    margin: 0 0 10px; /* Margin for the heading */
+    font-size: 1.2em; /* Adjust heading size as needed */
+}
+
+.popup ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0 10px; /* Margin between lists */
+    flex: 1; /* Allow lists to grow equally */
+}
+
+.popup li {
+    margin: 5px 0; /* Margin between items */
+    font-size: 0.9em; /* Smaller font size for list items */
+}
+
+.popup a {
+    text-decoration: none; /* Remove underline from links */
+    color: #430345; /* Link color */
+    position: relative; /* Enable positioning for the pseudo-element */
+}
+
+
+
+
