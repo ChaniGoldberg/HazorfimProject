@@ -17,11 +17,13 @@ function App() {
       <ThemeProvider>
         <Router>
           <ScrollToTopButton /> {/* Add the ScrollToTopButton here */}
-          <Nav1 />
+
           <AdBanner />
+          <Nav1 />
           <Navbar2 />
           <AppRoutes /> {/* כל הניתובים שלך כאן */}
         </Router>
+
         {/* Other components */}
       </ThemeProvider>
     </Provider>
