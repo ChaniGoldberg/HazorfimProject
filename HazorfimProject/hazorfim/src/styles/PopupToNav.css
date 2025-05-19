@@ -1,4 +1,4 @@
-.popup {
+.unique-popup {
     position: absolute;
     top: 60px; /* Adjust based on your layout */
     left: 0;
@@ -12,31 +12,29 @@
     flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
 }
 
-.popup h3 {
+.unique-popup h3 {
     margin: 0 0 10px; /* Margin for the heading */
     font-size: 1.2em; /* Adjust heading size as needed */
 }
 
-.popup ul {
+.unique-popup ul {
     list-style-type: none; /* Remove default list styles */
     padding: 0; /* Remove default padding */
     margin: 0 10px; /* Margin between lists */
     flex: 1; /* Allow lists to grow equally */
 }
 
-.popup li {
+.unique-popup li {
     margin: 5px 0; /* Margin between items */
     font-size: 0.9em; /* Smaller font size for list items */
 }
 
-.popup a {
+.unique-popup a {
     text-decoration: none; /* Remove underline from links */
     color: #430345; /* Link color */
     position: relative; /* Enable positioning for the pseudo-element */
 }
 
-
-
-.popup a:hover::after {
+.unique-popup a:hover::after {
     width: 100%; /* Expand the width on hover */
 }
