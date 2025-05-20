@@ -1,0 +1,36 @@
+.custom-search-input {
+    /* עיצוב עבור שדה החיפוש */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.custom-popup {
+    position: absolute; /* או fixed אם תרצה שהפופאפ יהיה קבוע במסך */
+    top: 100%; /* ממקם את הפופאפ מתחת לאינפוט */
+    left: 0;
+    width: 20%; /* רוחב מלא */
+    height: 50vh; /* גובה חצי מסך */
+    overflow-y: auto; /* אפשרות לגלול במקרה של תוכן ארוך */
+    background-color: white; /* צבע רקע של הפופאפ */
+    border: 1px solid #ccc; /* גבול לפופאפ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צל לפופאפ */
+    z-index: 1000; /* לוודא שהפופאפ מעל לתוכן אחר */
+}
+a {
+    color: #4B0082; /* סגול כהה */
+}
+
+a:hover {
+    color: #6A0DAD; /* צבע סגול כהה יותר בעת ריחוף */
+}
+
+.custom-popup p {
+    margin: 10px 15px; /* 10 פיקסלים למעלה ולמטה, 15 פיקסלים מצדדים */
+}
+.custom-popup h4 {
+    color: #d3d3d3; /* צבע אפור בהיר לכותרות */
+    margin: 0; /* ביטול מרווחים ברירת מחדל */
+    padding: 10px; /* ריווח פנימי לכותרות */
+}
